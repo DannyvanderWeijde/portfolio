@@ -1,7 +1,11 @@
 <template>
-  <test-component msg="Hello world" />
+  <default-layout>
+    <main>
+      Home
+    </main>
+  </default-layout>
 </template>
 
 <script setup lang="ts">
-  import TestComponent from '../../../unstyled-vue-front-end-framework/unstyled-vue-front-end-framework/components/TestComponent.vue'
+  import DefaultLayout from '@/layouts/DefaultLayout.vue'
 </script>

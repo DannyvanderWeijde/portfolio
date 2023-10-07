@@ -1,0 +1,23 @@
+.route {
+    &-enter {
+        &-from {
+            opacity: 0;
+            transform: translate(page-animation-x, 0);
+        }
+
+        &-active {
+            transition: all $transition-time-primary ease-out;
+        }
+    }
+
+    &-leave {
+        &-to {
+            opacity: 0;
+            transform: translate(-#{$page-animation-x}, 0);
+        }
+
+        &-active {
+            transition: all $transition-time-primary ease-in;
+        }
+    }
+}
