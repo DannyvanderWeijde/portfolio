@@ -1,11 +1,7 @@
 <template>
   <div class="app">
     <header>
-      <!-- Navbar content goes here -->
-      <nav>
-        <router-link :to="{name: 'home'}">home</router-link>
-        <router-link :to="{name: 'about'}">about</router-link>
-      </nav>
+      <nav-bar-component />
     </header>
 
     <slot></slot>
@@ -15,3 +11,6 @@
     </footer>
   </div>
 </template>
+<script setup lang="ts">
+  import NavBarComponent from '@/components/navbar/navBarComponent.vue'
+</script>
