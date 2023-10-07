@@ -1,6 +1,7 @@
 <template>
-  <hello-world msg="Hello world" />
+  <test-component msg="Hello world" />
 </template>
+
 <script setup lang="ts">
-import HelloWorld from '@/components/HelloWorld.vue'
+  import TestComponent from '../../../unstyled-vue-front-end-framework/unstyled-vue-front-end-framework/components/TestComponent.vue'
 </script>
