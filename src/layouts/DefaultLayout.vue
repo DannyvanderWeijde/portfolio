@@ -1,8 +1,6 @@
 <template>
   <div class="app">
-    <header>
-      <nav-bar-component />
-    </header>
+    <nav-bar-component />
 
     <slot></slot>
 
