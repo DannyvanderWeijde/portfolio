@@ -22,28 +22,27 @@
 /*************************
  * Header.
  ************************/
-/*************************
- * Navigation.
-************************/
-.framework-navbar {
+.framework-app__header {
   align-items: center;
   display: flex;
   gap: 0.5rem;
   justify-content: space-between;
 }
-.framework-navbar__left, .framework-navbar__right {
-  flex: 0 0 5rem;
-}
-.framework-navbar__middle {
-  flex: 1 1 auto;
-}
-
 .framework-app__header--sticky {
   left: 0;
   position: sticky;
   top: 0;
 }
+.framework-app__header__left, .framework-app__header__right {
+  flex: 0 0 5rem;
+}
+.framework-app__header__middle {
+  flex: 1 1 auto;
+}
 
+/*************************
+ * Navigation.
+************************/
 /*************************
  * Components.
  ************************/
@@ -85,7 +84,7 @@
  ************************/
 body {
   color: #999;
-  background: #222;
+  background: #1A181B;
   overflow-x: hidden;
 }
 
@@ -98,6 +97,46 @@ body {
 /*************************
  * Header.
  ************************/
+.header {
+  background: linear-gradient(180deg, rgba(26, 24, 27, 0.8) 0%, rgba(26, 24, 27, 0) 79.95%);
+  padding: 2rem 0.5rem;
+}
+@media (min-width: 600px) {
+  .header {
+    padding: 2rem 4rem;
+  }
+}
+.header__logo {
+  filter: drop-shadow(0 0 0.25rem #D8C293);
+  width: 5rem;
+}
+.header__icon-container {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+@media (min-width: 600px) {
+  .header__icon-container {
+    gap: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .header__icon-container {
+    gap: 1.75rem;
+  }
+}
+.header__icon-image {
+  filter: drop-shadow(0 0 0.25rem #D8C293);
+  transition: filter 0.5s ease-in-out;
+}
+.header__icon-image:hover {
+  filter: drop-shadow(0 0 0.5rem #D8C293);
+}
+.header__link {
+  display: block;
+}
+
 /*************************
  * Navigation.
 ************************/

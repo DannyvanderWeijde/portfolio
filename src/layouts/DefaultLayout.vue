@@ -10,5 +10,5 @@
   </div>
 </template>
 <script setup lang="ts">
-  import NavBarComponent from '@/components/navbar/navBarComponent.vue'
+  import NavBarComponent from '@/components/navbar/TheNavBar.vue'
 </script>
