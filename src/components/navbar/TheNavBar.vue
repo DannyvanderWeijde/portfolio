@@ -17,8 +17,10 @@
       </ul>
     </template>
 
-    <template #right>
-      <div>right</div>
+    <template #right class="test">
+      <button class="header__menu-button">
+        menu
+      </button>
     </template>
   </the-header>
 </template>

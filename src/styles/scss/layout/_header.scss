@@ -1,21 +1,32 @@
 .header {
     background: linear-gradient(180deg, rgba(26, 24, 27, 0.80) 0%, rgba(26, 24, 27, 0.00) 79.95%);
-    padding: 2rem .5rem;
+    padding: 1rem .5rem;
 
     @include tablet-portrait () {
         padding: 2rem 4rem;
     }
 
     &__logo {
-        filter: drop-shadow(0 0 .25rem #D8C293);
-        width: 5rem;
+        filter: drop-shadow(0 0 .25rem var(--color-primary));
+        width: 4rem;
+
+        @include tablet-portrait () {
+            width: 5rem;
+        }
     }
 
     &__icon {
+        width: 1.75rem;
+
+        @include tablet-portrait () {
+            width: 2rem;
+        }
+
         &-container {
             align-items: center;
             display: flex;
             gap: .5rem;
+            justify-content: center;
             list-style: none;
 
             @include tablet-portrait () {
@@ -28,16 +39,52 @@
         }
 
         &-image {
-            filter: drop-shadow(0 0 .25rem #D8C293);
+            filter: drop-shadow(0 0 .25rem var(--color-primary));
             transition: filter .5s ease-in-out;
+            width: 100%;
 
             &:hover {
-                filter: drop-shadow(0 0 .5rem #D8C293);
+                filter: drop-shadow(0 0 .5rem var(--color-primary));
             }
         }
     }
 
     &__link {
         display: block;
+    }
+
+    &__menu {
+        &-button {
+            background: none;
+            border: none;
+            color: var(--color-primary);
+            cursor: pointer;
+            font-family: var(--font-primary);
+            font-size: 1.125rem;
+            font-weight: 400;
+            letter-spacing: .28125rem;
+            line-height: 0;
+            transition: text-shadow .5s ease-in-out;
+            text-shadow: 0 0 .25rem var(--color-primary);
+            text-transform: uppercase;
+
+            &:hover {
+                text-shadow: 0 0 .75rem var(--color-primary);
+            }
+        }
+    }
+}
+
+.framework-app {
+    &__header {
+        &-item {
+            &--right {
+                text-align: right;
+            }
+
+            &--middle {
+                line-height: 0;
+            }
+        }
     }
 }
