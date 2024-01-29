@@ -23,24 +23,24 @@
  * Header.
  ************************/
 @import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
-.framework-app__header {
+.framework-app-header {
   align-items: center;
   display: flex;
   gap: 0.5rem;
   justify-content: space-between;
 }
-.framework-app__header--sticky {
+.framework-app-header--sticky {
   left: 0;
   position: sticky;
   top: 0;
 }
-.framework-app__header-item {
+.framework-app-header__item {
   min-width: 0;
 }
-.framework-app__header-item--left, .framework-app__header-item--right {
+.framework-app-header__item--left, .framework-app-header__item--right {
   flex: 0 0 5rem;
 }
-.framework-app__header-item--middle {
+.framework-app-header__item--middle {
   flex: 1 1 auto;
 }
 
@@ -131,13 +131,19 @@ body {
   }
 }
 .header__logo {
-  filter: drop-shadow(0 0 0.25rem var(--color-primary));
+  filter: drop-shadow(0 0 0.175rem var(--color-primary));
   width: 4rem;
 }
 @media (min-width: 600px) {
   .header__logo {
     width: 5rem;
   }
+}
+.header__item--right {
+  text-align: right;
+}
+.header__item--middle {
+  line-height: 0;
 }
 .header__icon {
   width: 1.75rem;
@@ -165,12 +171,12 @@ body {
   }
 }
 .header__icon-image {
-  filter: drop-shadow(0 0 0.25rem var(--color-primary));
+  filter: drop-shadow(0 0 0.125rem var(--color-primary));
   transition: filter 0.5s ease-in-out;
   width: 100%;
 }
 .header__icon-image:hover {
-  filter: drop-shadow(0 0 0.5rem var(--color-primary));
+  filter: drop-shadow(0 0 0.25rem var(--color-primary));
 }
 .header__link {
   display: block;
@@ -193,16 +199,26 @@ body {
   text-shadow: 0 0 0.75rem var(--color-primary);
 }
 
-.framework-app__header-item--right {
-  text-align: right;
-}
-.framework-app__header-item--middle {
-  line-height: 0;
-}
-
 /*************************
  * Navigation.
 ************************/
+/*************************
+ * Menu.
+************************/
+.menu {
+  background: linear-gradient(180deg, rgba(26, 24, 27, 0.8) 0%, rgba(26, 24, 27, 0) 79.95%);
+  left: 0;
+  padding: 1rem 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .menu {
+    padding: 2rem 4rem;
+  }
+}
+
 /*************************
  * Components.
  ************************/

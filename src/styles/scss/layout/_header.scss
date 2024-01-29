@@ -7,11 +7,21 @@
     }
 
     &__logo {
-        filter: drop-shadow(0 0 .25rem var(--color-primary));
+        filter: drop-shadow(0 0 .175rem var(--color-primary));
         width: 4rem;
 
         @include tablet-portrait () {
             width: 5rem;
+        }
+    }
+
+    &__item {
+        &--right {
+            text-align: right;
+        }
+
+        &--middle {
+            line-height: 0;
         }
     }
 
@@ -39,12 +49,12 @@
         }
 
         &-image {
-            filter: drop-shadow(0 0 .25rem var(--color-primary));
+            filter: drop-shadow(0 0 .125rem var(--color-primary));
             transition: filter .5s ease-in-out;
             width: 100%;
 
             &:hover {
-                filter: drop-shadow(0 0 .5rem var(--color-primary));
+                filter: drop-shadow(0 0 .25rem var(--color-primary));
             }
         }
     }
@@ -70,20 +80,6 @@
 
             &:hover {
                 text-shadow: 0 0 .75rem var(--color-primary);
-            }
-        }
-    }
-}
-
-.framework-app {
-    &__header {
-        &-item {
-            &--right {
-                text-align: right;
-            }
-
-            &--middle {
-                line-height: 0;
             }
         }
     }

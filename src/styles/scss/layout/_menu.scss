@@ -1,0 +1,12 @@
+.menu {
+    background: linear-gradient(180deg, rgba(26, 24, 27, 0.80) 0%, rgba(26, 24, 27, 0.00) 79.95%);
+    left: 0;
+    padding: 1rem .5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    @include tablet-portrait () {
+        padding: 2rem 4rem;
+    }
+}

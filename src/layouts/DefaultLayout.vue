@@ -1,6 +1,7 @@
 <template>
   <div class="app">
-    <nav-bar-component />
+    <the-nav-bar />
+    <the-menu />
 
     <slot></slot>
 
@@ -10,5 +11,6 @@
   </div>
 </template>
 <script setup lang="ts">
-  import NavBarComponent from '@/components/navbar/TheNavBar.vue'
+  import TheMenu from '@/components/menu/TheMenu.vue'
+  import TheNavBar from '@/components/navbar/TheNavBar.vue'
 </script>

@@ -1,7 +1,10 @@
 <template>
   <the-header
     :navbar-items="navbarItems"
-    block-class="header"
+    :leftClass="'header__item header__item--left'"
+    :middleClass="'header__item header__item--middle'"
+    :rightClass="'header__item header__item--right'"
+    class="header"
   >
     <template #left>
       <img class="header__logo" src="@/assets/danny-van-der-weijde-logo.svg" alt="logo">
