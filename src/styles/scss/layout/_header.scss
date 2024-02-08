@@ -83,4 +83,37 @@
             }
         }
     }
+
+    &__language {
+        &-switch {
+            display: flex;
+            justify-content: center;
+            gap: .5rem;
+        }
+
+        &-button {
+            background: none;
+            border: none;
+            color: var(--color-tertiary);
+            font-family: var(--font-primary);
+            font-size: 1.125rem;
+            letter-spacing: .28125rem;
+            text-transform: uppercase;
+            outline: none;
+
+            &:last-child {
+                text-align: right; /* align last button text to the right */
+            }
+
+            &--active {
+                color: var(--color-primary)
+            }
+        }
+    }
+
+    &__seperator {
+        color: var(--color-tertiary);
+        font-family: var(--font-primary);
+        font-size: 1.125rem;
+    }
 }

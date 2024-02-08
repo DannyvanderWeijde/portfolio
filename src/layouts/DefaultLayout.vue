@@ -1,7 +1,7 @@
 <template>
   <div class="app">
-    <the-nav-bar />
     <the-menu />
+    <the-nav-bar />
 
     <slot></slot>
 

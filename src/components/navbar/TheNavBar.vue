@@ -21,7 +21,7 @@
     </template>
 
     <template #right class="test">
-      <button class="header__menu-button">
+      <button class="header__menu-button" @click="store.showMenu = true">
         menu
       </button>
     </template>
@@ -31,6 +31,9 @@
 <script setup lang="ts">
   import { ref } from 'vue'
   import TheHeader from '../../../../unstyled-vue-front-end-framework/unstyled-vue-front-end-framework/components/layout/header/variant-1/TheHeader.vue'
+  import { globalStore } from '@/stores/globalStore.js'
+
+  const store = globalStore()
 
   const navbarItems = ref({
     home: 'home',
